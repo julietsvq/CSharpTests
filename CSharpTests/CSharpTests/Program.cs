@@ -10,6 +10,7 @@ namespace CSharpTests
 
             WriteLine(mything.isEatable("food"));
             WriteLine(mything.isDrinkable("drink"));
+            WriteLine(mything.isEatableOrDrinkable("nothing"));
         }
     }
 
@@ -31,6 +32,11 @@ namespace CSharpTests
         public bool isEatable(string mything)
         {
             return mything == "food";
+        }
+
+        public bool isEatableOrDrinkable(string mything)
+        {
+            return this.isEatable(mything) || this.isDrinkable(mything);
         }
     }
 }
