@@ -21,7 +21,6 @@ namespace CSharpTests
         }
     }
 
-
     interface IEatable
     {
         bool isEatable(string mything);
